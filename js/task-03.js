@@ -15,6 +15,11 @@ const images = [
 
 function newList(arr) {
   const ulEl = document.querySelector(".gallery");
+
+  ulEl.style.display = "flex";
+  ulEl.style.gap = "24px";
+  ulEl.style.listStyle = "none";
+
   const imgEl = arr
     .map(
       (item) =>
