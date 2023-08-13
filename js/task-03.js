@@ -22,9 +22,9 @@ function newList(arr) {
 
   const imgEl = arr
     .map(
-      (item) =>
+      ({ url, alt }) =>
         `<li>
-      <img src="${item.url}" alt="${item.alt}" width="300" class="item-img"/>
+      <img src="${url}" alt="${alt}" width="300" class="item-img"/>
     </li>`
     )
     .join("");
